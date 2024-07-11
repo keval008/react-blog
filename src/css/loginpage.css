@@ -1,0 +1,93 @@
+.MuiTextField-root {
+  max-width: 400px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100%;
+  background-image: linear-gradient(#3182ced2, #3182ced2),
+    url(../assets/login-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 370px;
+  max-width: 370px;
+  padding: 50px;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container {
+  width: 1920px;
+  max-width: 96%;
+  margin: 0 auto;
+}
+
+.loginHeader {
+  text-align: center;
+  font-size: 13px;
+}
+
+.loginpagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  margin: 0 !important;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.login-boxes > button {
+  background-color: transparent;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.login-boxes > button:hover {
+  background-color: rgb(247, 247, 247);
+  transition: 0.4s;
+}
+
+.login-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.img {
+  font-size: 30px !important;
+}
+
+.or {
+  text-align: center;
+  color: rgb(158, 158, 158);
+}
+
+form > label {
+  font-size: 14px;
+}
