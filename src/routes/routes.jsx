@@ -9,6 +9,7 @@ import Tables from "../components/tables/tables";
 import Billing from "../components/Billing/Billing";
 import Profile from "../components/profile/profile";
 import RTL from "../components/RTL/RTL";
+import { Navigate } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
             </ProtectedRoute>
           }
         >
+          <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/tables" element={<Tables />} />
           <Route path="/admin/billing" element={<Billing />} />

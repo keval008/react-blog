@@ -120,7 +120,7 @@ const Login = () => {
           <h4>or</h4>
         </div>
         <div className="loginBody">
-          <form onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="email">email</label>
             <TextField
               type="text"
