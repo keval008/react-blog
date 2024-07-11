@@ -1,4 +1,4 @@
-import Login from "../components/adminpage/index";
+import Login from "../components/adminpage/adminpage";
 import "../css/loginpage.css";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import { Button } from "@mui/material";

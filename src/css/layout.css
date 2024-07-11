@@ -1,0 +1,40 @@
+.Homepage {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: grey;
+}
+
+.sidebar a:hover {
+  color: #23527c;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.active {
+  color: red;
+  background-color: blue;
+}
