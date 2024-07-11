@@ -53,12 +53,12 @@ form {
   height: 100vh;
 }
 
-.css-j204z7-MuiFormControlLabel-root {
+/* .css-j204z7-MuiFormControlLabel-root {
   margin: 0 !important;
   display: flex;
   gap: 10px;
   align-items: center;
-}
+} */
 
 .login-boxes > button {
   background-color: transparent;
