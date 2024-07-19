@@ -11,18 +11,15 @@ const Dashboard = () => {
   const [total, setTotal] = useState(0);
   const showdata = async () => {
     const data = await getCategories();
-    console.log(data);
     setCategories(data.data.data);
   };
 
   const showsubdata = async () => {
     const subdata = await getsubCategories();
-    console.log(subdata);
     setSubCategories(subdata.data.data);
   };
   const showBlogs = async () => {
     const blogdata = await getBlogs();
-    console.log(blogdata);
     setBlogs(blogdata.data.data);
   };
 
@@ -34,7 +31,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     setTotal(categories.length + subcategories.length + blogs.length);
-  }, []);
+  }, [categories, subcategories, blogs]);
 
   return (
     <>
