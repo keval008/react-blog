@@ -161,23 +161,26 @@ function Categories() {
   };
 
   const validationSchema = Yup.object({
-    category: Yup.string().required("Category is required"),
-    //   .test("unique", "Category already exists", async (value) => {
-    //     if (editing) {
-    //       const filterdata = data.filter((category) => {
-    //         return category.id === editedCategoryId;
-    //       });
-    //       const isUnique = !filterdata.some((category) => {
-    //         return category.category === value;
-    //       });
-    //       return isUnique;
-    //     } else {
-    //       const isUnique = !data.some((category) => {
-    //         return category.category === value;
-    //       });
-    //       return isUnique;
-    //     }
-    //   }),
+    category: Yup.string()
+      .required("Category is required")
+      .test("unique", "Category already exists", async (value) => {
+        if (editing) {
+          const currentCategory = data.find(
+            (category) => category.id === editedCategoryId
+          );
+          const isUnique = !data.some((category) => {
+            return (
+              category.id !== currentCategory.id && category.category === value
+            );
+          });
+          return isUnique;
+        } else {
+          const isUnique = !data.some((category) => {
+            return category.category === value;
+          });
+          return isUnique;
+        }
+      }),
     image: Yup.mixed()
       .test(
         "fileType",

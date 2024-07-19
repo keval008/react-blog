@@ -149,7 +149,11 @@ const Login = () => {
               error={touched.password && Boolean(errors.password)}
               helperText={touched.password && errors.password}
             />
-            <FormControlLabel control={<IOSSwitch />} label="Remember Me" />
+            <FormControlLabel
+              control={<IOSSwitch />}
+              label="Remember Me"
+              className="login-remember-switch"
+            />
 
             <LoginButton variant="contained" color="dark" type="submit">
               Login

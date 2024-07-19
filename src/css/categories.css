@@ -147,7 +147,8 @@
   cursor: pointer;
 }
 
-.image-upload-container:hover {
+.image-upload-container:hover,
+.image-upload-container-blog:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
