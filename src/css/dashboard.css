@@ -1,0 +1,25 @@
+.count-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.count-box {
+  width: 20%;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+}
+
+.count-box > h4 {
+  color: #a0aec0;
+  font-size: 13px;
+}
+
+.count-box > h2 {
+  font-size: 20px;
+}
