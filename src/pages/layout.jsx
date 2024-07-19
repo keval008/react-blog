@@ -90,31 +90,6 @@ const Layout = () => {
                   </ListItemButton>
                 </Link>
 
-                <Link to="/admin/tables">
-                  <ListItemButton
-                    sx={{
-                      borderRadius: 3,
-                      display: "flex",
-                      gap: 1,
-                      padding: "13px",
-                      margin: "10px 0",
-                    }}
-                    className={
-                      location.pathname === "/admin/tables" ? "active" : ""
-                    }
-                  >
-                    <BarChartIcon
-                      className={
-                        location.pathname === "/admin/tables"
-                          ? "activeicon "
-                          : "navicon"
-                      }
-                      fontSize={"16px"}
-                    />
-                    Tables{" "}
-                  </ListItemButton>
-                </Link>
-
                 <Link to="/admin/categories">
                   <ListItemButton
                     sx={{
@@ -140,7 +115,7 @@ const Layout = () => {
                   </ListItemButton>
                 </Link>
 
-                <Link to="/admin/RTL">
+                <Link to="/admin/Subcategories">
                   <ListItemButton
                     sx={{
                       borderRadius: 3,
@@ -150,18 +125,45 @@ const Layout = () => {
                       margin: "10px 0",
                     }}
                     className={
-                      location.pathname === "/admin/RTL" ? "active" : ""
+                      location.pathname === "/admin/Subcategories"
+                        ? "active"
+                        : ""
                     }
                   >
-                    <BuildIcon
+                    <BarChartIcon
                       className={
-                        location.pathname === "/admin/RTL"
+                        location.pathname === "/admin/Subcategories"
                           ? "activeicon "
                           : "navicon"
                       }
                       fontSize={"16px"}
                     />
-                    RTL{" "}
+                    Sub Categories
+                  </ListItemButton>
+                </Link>
+
+                <Link to="/admin/Blog">
+                  <ListItemButton
+                    sx={{
+                      borderRadius: 3,
+                      display: "flex",
+                      gap: 1,
+                      padding: "13px",
+                      margin: "10px 0",
+                    }}
+                    className={
+                      location.pathname === "/admin/Blog" ? "active" : ""
+                    }
+                  >
+                    <BuildIcon
+                      className={
+                        location.pathname === "/admin/Blog"
+                          ? "activeicon "
+                          : "navicon"
+                      }
+                      fontSize={"16px"}
+                    />
+                    Blog
                   </ListItemButton>
                 </Link>
               </ul>
@@ -208,7 +210,7 @@ const Layout = () => {
                     <InsertDriveFileIcon
                       fontSize={"16px"}
                       className={
-                        location.pathname === "/admin/profile"
+                        location.pathname === "/login"
                           ? "activeicon"
                           : "navicon"
                       }
@@ -231,7 +233,7 @@ const Layout = () => {
                     <RocketLaunchIcon
                       fontSize={"16px"}
                       className={
-                        location.pathname === "/admin/profile"
+                        location.pathname === "/login"
                           ? "activeicon"
                           : "navicon"
                       }

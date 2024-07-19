@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^42.0.1",
+    "@ckeditor/ckeditor5-react": "^8.0.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/roboto": "^5.0.13",
@@ -17,12 +19,17 @@
     "@mui/icons-material": "^5.16.0",
     "@mui/material": "^5.16.0",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@tinymce/tinymce-react": "^5.1.1",
+    "@tiptap/extension-code-block-lowlight": "^2.5.4",
     "axios": "^1.7.2",
     "formik": "^2.4.6",
+    "lowlight": "^3.1.0",
     "react": "^18.3.1",
+    "react-data-table-component": "^7.6.2",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.1",
     "styled-components": "^6.1.11",
+    "tinymce": "^7.2.1",
     "yup": "^1.4.0"
   },
   "devDependencies": {

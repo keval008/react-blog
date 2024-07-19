@@ -5,11 +5,12 @@ import Adminlogin from "../pages/adminlogin";
 import Afterlogin from "../pages/afterlogin";
 import Layout from "../pages/layout";
 import Dashboard from "../components/dashboard/dashboard";
-import Tables from "../components/tables/tables";
+import Tables from "../components/Subcategories/Subcategories";
 import Categories from "../components/Categories/Categories";
 import Profile from "../components/profile/profile";
-import RTL from "../components/RTL/RTL";
+import Blog from "../components/Blog/Blog";
 import { Navigate } from "react-router-dom";
+import Subcategories from "../components/Subcategories/Subcategories";
 function App() {
   return (
     <BrowserRouter>
@@ -25,10 +26,10 @@ function App() {
         >
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
-          <Route path="/admin/tables" element={<Tables />} />
+          <Route path="/admin/Subcategories" element={<Subcategories />} />
           <Route path="/admin/categories" element={<Categories />} />
           <Route path="/admin/profile" element={<Profile />} />
-          <Route path="/admin/RTL" element={<RTL />} />
+          <Route path="/admin/Blog" element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>

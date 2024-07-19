@@ -2,31 +2,38 @@
   background-color: white;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 5px 0 grey;
+  box-shadow: 0 0 5px 0 rgb(167, 167, 167);
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 800px;
+  max-width: 96%;
 }
 
-.category-Form {
+.form-container-blog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0 rgb(167, 167, 167);
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 97%;
+}
+
+.blog-form-head-container {
+  display: flex;
+  gap: 30px;
 }
 
 .preview-image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.upload-icon {
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .image-upload-container {
@@ -34,28 +41,96 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
-  width: 300px;
-  max-height: 200px;
-  height: 200px;
+  width: 100%;
   border: 1px dashed #ccc;
   border-radius: 8px;
-  padding: 20px;
+  padding: 5px;
+}
+
+.image-upload-container-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.form-container-whole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catForm {
+  width: 100%;
+}
+
+.imagebox {
+  width: 100%;
+}
+.imagebox-blog {
+  width: 100%;
 }
 
 .upload-button {
   position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #f0f0f0;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 200px;
   cursor: pointer;
   overflow: hidden;
 }
 
+.upload-button-blog {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.upload-button-blog img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.upload-button-blog span {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
 .upload-button img {
-  width: 150px;
-  height: 150px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #333;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -67,19 +142,35 @@
   justify-content: center;
   font-size: 13px;
   color: #333;
-  height: 150px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
 }
 
-.upload-button span:hover {
-  background-color: #3333333f;
+.image-upload-container:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.category-inputfield,
+.status-inputfield,
+.catagoryid-inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .category-Form {
-  display: flex;
-  flex-direction: row;
   gap: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.category-Form-blog {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .file-info {
@@ -95,5 +186,39 @@
 .inputbox-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 34px;
+  width: 100%;
+}
+
+.inputbox-container-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 100%;
+}
+
+.table_names_col {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.Categories-Data-Table {
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 #cacaca;
+  border-radius: 20px;
+}
+
+.rdt_Table {
+  border-radius: 0 !important;
+}
+
+.Categories-table-name {
+  padding: 13px;
+  color: #666;
+}
+
+.heading {
+  color: white;
 }
